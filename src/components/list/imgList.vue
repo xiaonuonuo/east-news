@@ -1,10 +1,10 @@
 <template lang="html">
     <li class="J-has-share listNews-item-s2 listNews-item- clearfix">
         <h3>
-            <router-link :to="{ path: '/show', query: { userId: 123 }}" class="J-share-a" target="_blank">{{shareTxt}}</router-link>
+            <router-link :to="{ path: '/show', query: { userId: 123 }}" class="J-share-a" target="_blank">{{imgList.shareTxt}}</router-link>
         </h3>
         <p class="img-wrap clearfix">
-            <router-link :to="{ path: '/show', query: { userId: 123 }}" target="_blank" title="list.imgTitle" class="fl" v-for="list in content">
+            <router-link :to="{ path: '/show', query: { userId: 123 }}" target="_blank" title="list.imgTitle" class="fl" v-for="list in imgList.content">
                 <img class="animation" :src="list.src" alt="" width="200" height="150">
             </router-link>
         </p>
@@ -23,20 +23,10 @@
 
 <script>
 export default {
+    props:['imgList'],
     data(){
         return {
-            shareTxt:"泾阳茯茶“古”法“新”技 传承创新中国茶文化",
-            from:"2017-05-04 15:43 来源：国际在线",
-            content:[{
-                imgTitle:"泾阳茯茶“古”法“新”技 传承创新中国茶文化",
-                src:"//02.imgmini.eastday.com/mobile/20170504/20170504154330_66c455cef74043d1b444c75125ecd580_1_mwpm_03200403.jpeg"
-            },{
-                imgTitle:"泾阳茯茶“古”法“新”技 传承创新中国茶文化",
-                src:"//02.imgmini.eastday.com/mobile/20170504/20170504154330_66c455cef74043d1b444c75125ecd580_2_mwpm_03200403.jpeg"
-            },{
-                imgTitle:"泾阳茯茶“古”法“新”技 传承创新中国茶文化",
-                src:"//02.imgmini.eastday.com/mobile/20170504/20170504154330_66c455cef74043d1b444c75125ecd580_3_mwpm_03200403.jpeg"
-            }]
+
         }
     },
     methods:{
