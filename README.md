@@ -1,4 +1,4 @@
-# east_news_copy
+# east_news
 
 > A Vue.js project
 
