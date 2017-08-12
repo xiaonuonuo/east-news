@@ -1,6 +1,6 @@
 # east_news
 
-> A Vue.js project
+> 基于 vue 改版的部分东方头条页面
 
 ## Build Setup
 
