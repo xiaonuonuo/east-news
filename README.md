@@ -1,6 +1,6 @@
 # east_news
 
-> 基于 vue 改版的部分东方头条静态页面
+> 基于 vue 改版的部分东方头条的静态页面
 
 - 该项目主要技术栈为**vue + vue-router + webpack**，初期上手`vue`练手之用
 - 该项目主要集成列表页和详情页，列表页由 **flashimg - 图片轮播**、**hotNews - 新闻热点**、**hoursNew - 24小时新闻排行**、**imgList - 图片列表**、**newsList - 新闻列表** 5个组件构成
