@@ -1,4 +1,4 @@
-# east_news
+# east-news
 
 > 基于 vue 改版的部分东方头条静态页面
 
